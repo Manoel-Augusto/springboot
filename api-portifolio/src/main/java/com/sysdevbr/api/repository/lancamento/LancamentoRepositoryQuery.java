@@ -10,7 +10,7 @@ import com.sysdevbr.api.repository.projection.ResumoLancamento;
 public interface LancamentoRepositoryQuery {
 
 	public Page<Lancamento> filtrar(LancamentoFilter lancamentoFilter, Pageable pageable);
-	//public Page<ResumoLancamento> resumir(LancamentoFilter lancamentoFilter, Pageable pageable);
+	public Page<ResumoLancamento> resumir(LancamentoFilter lancamentoFilter, org.springframework.data.domain.Pageable pageable);
 
 	Page<Lancamento> filtrar(LancamentoFilter lancamentoFilter, org.springframework.data.domain.Pageable pageable);
 	
